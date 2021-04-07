@@ -71,6 +71,11 @@ public class locatorPractice {
 		//Locators 6.partialLinkText()
 		WebElement ele7 = driver.findElement(By.partialLinkText("Terms"));
 		ele7.click();
+		driver.navigate().back();
+		
+		//Lacator 7. xpath- Relative
+		WebElement ele8=driver.findElement(By.xpath("(//html//input)[9]"));
+		ele8.click();
 		
 		Thread.sleep(5000);
 		driver.quit();		
