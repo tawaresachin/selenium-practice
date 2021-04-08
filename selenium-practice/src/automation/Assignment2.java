@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Assignment2 {
@@ -61,6 +62,29 @@ public class Assignment2 {
 	//xpath -6. by contains
 	WebElement ele8 = driver.findElement(By.xpath("//option[contains(text(),'May')]"));
 	ele8.click();
+	
+	// Dropdown using Select method
+	WebElement ele9=driver.findElement(By.xpath("//select[@name='birthday_year']"));
+	Select sel=new Select(ele9);
+	//sel.selectByIndex(1);
+	//sel.selectByValue("2019");
+	sel.selectByVisibleText("1988");
+	List<WebElement> options = sel.getOptions();
+	// to show all options of dropdown
+	System.out.println("Size of year dopdown: "+options.size());
+	int size=options.size();
+	for(int i=0;i<size;i++)
+	{
+		String str=options.get(i).getText();
+		System.out.println(str);
+	}
+	//to get first/default selected option if multi-select is allowed
+	WebElement ele10 = sel.getFirstSelectedOption();
+	String str1 = ele10.getText();
+	System.out.println("First selected option is: "+str1);
+	//to check if multi-select is allowed?
+	boolean flag = sel.isMultiple();
+	System.out.println("If multiple values are selected? :"+flag);
 	
 	Thread.sleep(5000);
 	driver.quit();
