@@ -63,14 +63,22 @@ public class Assignment2 {
 	WebElement ele8 = driver.findElement(By.xpath("//option[contains(text(),'May')]"));
 	ele8.click();
 	
-//	// Dropdown using Select method
-//	WebElement ele9=driver.findElement(By.xpath("//select[@name='birthday_year']"));
-//	Select sel=new Select(ele9);
-//	//sel.selectByIndex(1);
-//	//sel.selectByValue("2019");
-//	sel.selectByVisibleText("1988");
+//	//Method-1 to handle dropdown
+//	WebElement month = driver.findElement(By.xpath("//select[@name='birthday_month']"));
+//	month.click();
+//	month.sendKeys("May");
+//	month.click();
+	
+//  //Method-2 to handle dropdown using 'Select' method
+	WebElement ele9=driver.findElement(By.xpath("//select[@name='birthday_year']"));
+	Select sel=new Select(ele9);
+	//sel.selectByIndex(1);
+	//sel.selectByValue("2019");
+	sel.selectByVisibleText("1988");
+	
+	
+//	// To show all options of dropdown
 //	List<WebElement> options = sel.getOptions();
-//	// to show all options of dropdown
 //	System.out.println("Size of year dopdown: "+options.size());
 //	int size=options.size();
 //	for(int i=0;i<size;i++)
@@ -86,10 +94,7 @@ public class Assignment2 {
 //	boolean flag = sel.isMultiple();
 //	System.out.println("If multiple values are selected? :"+flag);
 	
-	WebElement month = driver.findElement(By.xpath("//select[@name='birthday_month']"));
-	month.click();
-	month.sendKeys("April");
-	month.click();
+
 	
 	Thread.sleep(5000);
 	driver.quit();
