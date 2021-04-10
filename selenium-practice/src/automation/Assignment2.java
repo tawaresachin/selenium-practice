@@ -94,7 +94,11 @@ public class Assignment2 {
 //	boolean flag = sel.isMultiple();
 //	System.out.println("If multiple values are selected? :"+flag);
 	
-
+	WebElement ele10=driver.findElement(By.xpath("(//span[@data-name='gender_wrapper']/span/input)[2]"));
+	ele10.click();
+	
+	WebElement ele11=driver.findElement(By.xpath("//button[contains(text(),'Sign Up')]"));
+	ele11.click();
 	
 	Thread.sleep(5000);
 	driver.quit();
