@@ -1,9 +1,7 @@
 package automation;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.sql.Driver;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
@@ -19,7 +17,7 @@ public class proprtyFile_Paramerization
 
 	public static void main(String[] args) throws IOException, InterruptedException
 	{
-		FileInputStream file=new FileInputStream("D:\\Testing Class\\local\\selenium-practice\\src\\data.properties");
+		FileInputStream file=new FileInputStream("D:\\Study\\Testing Class\\local\\selenium-practice\\src\\data.properties");
 		Properties prop=new Properties();
 		prop.load(file);
 		str = prop.getProperty("browser1");

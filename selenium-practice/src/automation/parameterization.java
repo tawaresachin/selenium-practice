@@ -22,7 +22,7 @@ public class parameterization
 
 	public static void main(String[] args) throws EncryptedDocumentException, IOException, InterruptedException 
 	{
-		System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\Study\\Drivers\\chromedriver_win32_91\\chromedriver.exe");
 		
 		WebDriver driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
@@ -30,7 +30,7 @@ public class parameterization
 		WebElement email = driver.findElement(By.xpath("//input[@id='email']"));
 		WebElement pass = driver.findElement(By.xpath("//input[@name='pass']"));
 		
-		FileInputStream file=new FileInputStream("C:\\Users\\sachi\\Desktop\\sample1.xlsx");
+		FileInputStream file=new FileInputStream("C:\\Users\\Sachin Taware\\Desktop\\sample1.xlsx");
 		Workbook file1 = WorkbookFactory.create(file);
 		Sheet sheet = file1.getSheet("Sheet1");
 		int maxRow = sheet.getLastRowNum();	
