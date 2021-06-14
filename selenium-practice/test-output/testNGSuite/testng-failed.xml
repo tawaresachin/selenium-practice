@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Failed suite [testNGSuite]]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="methods" name="testNGTest(failed)(failed)">
+<suite name="Failed suite [testNGSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="testNGTest(failed)">
     <classes>
       <class name="tesNGBasics.test1Class">
         <methods>
@@ -32,5 +32,5 @@
         </methods>
       </class> <!-- tesNGBasics.testNGKeywords -->
     </classes>
-  </test> <!-- testNGTest(failed)(failed) -->
-</suite> <!-- Failed suite [Failed suite [testNGSuite]] -->
+  </test> <!-- testNGTest(failed) -->
+</suite> <!-- Failed suite [testNGSuite] -->

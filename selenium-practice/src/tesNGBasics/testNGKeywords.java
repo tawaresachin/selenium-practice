@@ -1,11 +1,20 @@
 package tesNGBasics;
 
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.*;
 
 public class testNGKeywords 
 {
+	
 	@Test (groups="Functional")
 	public void method1()
 	{
@@ -43,4 +52,6 @@ public class testNGKeywords
 		Reporter.log("Method-6",true);
 //		Thread.sleep(6000);
 	}
+	
+
 }

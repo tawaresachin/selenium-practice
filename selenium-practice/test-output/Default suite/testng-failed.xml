@@ -3,12 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tesNGBasics.testNGKeywords">
+      <class name="tesNGBasics.testNGAssertions">
         <methods>
-          <include name="method3"/>
-          <include name="method5"/>
+          <include name="test9"/>
+          <include name="test8"/>
+          <include name="test4"/>
+          <include name="test1"/>
+          <include name="test7"/>
         </methods>
-      </class> <!-- tesNGBasics.testNGKeywords -->
+      </class> <!-- tesNGBasics.testNGAssertions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
