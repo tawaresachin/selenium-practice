@@ -3,15 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tesNGBasics.testNGAssertions">
+      <class name="tesNGBasics.testNGListener">
         <methods>
-          <include name="test9"/>
-          <include name="test8"/>
-          <include name="test4"/>
-          <include name="test1"/>
-          <include name="test7"/>
+          <include name="finish"/>
+          <include name="facebookLoginUser"/>
+          <include name="testListner"/>
+          <include name="setUP"/>
+          <include name="facebookLoginPassword"/>
+          <include name="syncTest"/>
         </methods>
-      </class> <!-- tesNGBasics.testNGAssertions -->
+      </class> <!-- tesNGBasics.testNGListener -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="testNGSuite">
+<parameter name="user" value="testUser"/>
   <test  thread-count="3" parallel="methods" name="testNGTest">
     <classes>
       <class name="tesNGBasics.testNGKeywords"/>
       <class name="tesNGBasics.test1Class"/>
       <class name="tesNGBasics.testNGAssertions">
-      		<methods>
+      	<methods>
       			<exclude name="test2"/>
       			<!--include name="test1"-->
       		</methods>
       </class>
-      
+      <class name="tesNGBasics.parameterization3"/>
+      <class name="tesNGBasics.testNGListener"/>
     </classes>
   </test> <!-- testNGTest -->
 </suite> <!-- testNGSuite -->

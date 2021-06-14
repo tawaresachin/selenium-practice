@@ -1,36 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Failed suite [testNGSuite]]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="methods" name="testNGTest(failed)(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tesNGBasics.test1Class">
+      <class name="tesNGBasics.testNGListener">
         <methods>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterSuite"/>
-          <include name="afterTest"/>
-          <include name="beforeMethod"/>
-          <include name="method3"/>
-          <include name="beforeClass"/>
+          <include name="finish"/>
+          <include name="facebookLoginUser"/>
+          <include name="testListner"/>
+          <include name="setUP"/>
+          <include name="facebookLoginPassword"/>
+          <include name="syncTest"/>
         </methods>
-      </class> <!-- tesNGBasics.test1Class -->
-      <class name="tesNGBasics.testNGAssertions">
-        <methods>
-          <include name="test9"/>
-          <include name="test8"/>
-          <include name="test4"/>
-          <include name="test1"/>
-          <include name="test7"/>
-        </methods>
-      </class> <!-- tesNGBasics.testNGAssertions -->
-      <class name="tesNGBasics.testNGKeywords">
-        <methods>
-          <include name="method3"/>
-          <include name="method5"/>
-        </methods>
-      </class> <!-- tesNGBasics.testNGKeywords -->
+      </class> <!-- tesNGBasics.testNGListener -->
     </classes>
-  </test> <!-- testNGTest(failed)(failed) -->
-</suite> <!-- Failed suite [Failed suite [testNGSuite]] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
