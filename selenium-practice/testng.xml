@@ -3,6 +3,12 @@
 <suite name="testNGSuite">
 <parameter name="user" value="testUser"/>
   <test  thread-count="3" parallel="methods" name="testNGTest">
+  	<groups>
+		<run>
+			<include name="Sanity"/>
+		</run>
+	</groups>
+  
     <classes>
       <class name="tesNGBasics.testNGKeywords"/>
       <class name="tesNGBasics.test1Class"/>

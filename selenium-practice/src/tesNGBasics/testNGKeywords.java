@@ -31,7 +31,7 @@ public class testNGKeywords
 	public void method3()
 	{
 		Reporter.log("Method-3",true);
-		Assert.fail();
+//		Assert.fail();
 	}
 	
 	@Test (priority='2',enabled=true,groups="Functional")
